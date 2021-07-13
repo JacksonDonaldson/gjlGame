@@ -23,7 +23,7 @@ public class movement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Time.timeScale == 0)
         {
@@ -32,24 +32,40 @@ public class movement : MonoBehaviour
 
         checkInputs();
 
+        
+
+
         if (holdingR)
         {
-            rb.velocity = new Vector2(speed, rb.velocity.y);
+            //if(!Physics2D.OverlapArea(new Vector2(transform.position.x + .51f, transform.position.y - .49f), new Vector2(transform.position.x + .51f, transform.position.y + .49f))){
+            //    rb.velocity = new Vector2(speed, rb.velocity.y);
+            //}
+            rb.AddForce(new Vector2(222, 0));
+            
+            
         }
         if (holdingL)
         {
-            rb.velocity = new Vector2(-speed, rb.velocity.y);
+            rb.AddForce(new Vector2(-222, 0));
+            
+
         }
         if (holdingL && holdingR)
         {
             if (recentHold == "L")
             {
-                rb.velocity = new Vector2(-speed, rb.velocity.y);
+                rb.AddForce(new Vector2(-222, 0));
+
             }
             else
             {
-                rb.velocity = new Vector2(speed, rb.velocity.y);
+                rb.AddForce(new Vector2(222, 0));
             }
+        }
+
+        if(!holdingL && !holdingR)
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
         }
 
         if (holdingJ)
@@ -61,6 +77,16 @@ public class movement : MonoBehaviour
         }
 
 
+        if (rb.velocity.x > speed)
+        {
+            rb.velocity = new Vector2(speed, rb.velocity.y);
+        }
+        if(rb.velocity.x < -speed)
+        {
+            rb.velocity = new Vector2(-speed, rb.velocity.y);
+        }
+
+        checkGroundedness();
     }
 
 
@@ -144,6 +170,20 @@ public class movement : MonoBehaviour
                     holdingJ = true;
                 }
             }
+        }
+    }
+
+    void checkGroundedness()
+    {
+        if(Physics2D.OverlapArea(new Vector2(transform.position.x - .35f, transform.position.y - .51f), new Vector2(transform.position.x + .35f, transform.position.y -.52f)))
+        {
+            grounded = true;
+            print(Physics2D.OverlapArea(new Vector2(transform.position.x - .35f, transform.position.y - .51f), new Vector2(transform.position.x + .35f, transform.position.y - .52f)));
+            print(transform.position);
+        }
+        else
+        {
+            grounded = false;
         }
     }
 }
