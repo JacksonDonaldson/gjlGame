@@ -7,7 +7,7 @@ public class movement : MonoBehaviour
     private bool holdingR;
     private bool holdingL;
     private bool holdingJ;
-    private bool holdingA;
+    public bool holdingA;
     private string recentHold;
     
     public float speed;
