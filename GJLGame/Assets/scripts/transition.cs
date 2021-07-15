@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class transition : MonoBehaviour
 {
-    private Vector3 startPos;
-    private float startRotation;
+    public Vector3 startPos;
+    public float startRotation;
 
     public float transitionTime = 1;
     public Vector3 endPos;
     public float endRotation;
 
-    private bool atStart = true;
+    public bool atStart = true;
     public bool doIt;
     // Start is called before the first frame update
     void Start()
     {
-        startPos = transform.position;
-        startRotation = transform.rotation.eulerAngles.z;
+        if(startPos == Vector3.zero)
+        {
+            startPos = transform.position;
+            startRotation = transform.rotation.eulerAngles.z;
+        }
+
         
     }
 
@@ -54,6 +58,16 @@ public class transition : MonoBehaviour
         {
             if(Time.time - startTime >= transitionTime)
             {
+                if (!atStart)
+                {
+                    transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, endRotation);
+                    transform.position = endPos;
+                }
+                else
+                {
+                    transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, startRotation);
+                    transform.position = startPos;
+                }
                 break;
             }
 
@@ -78,5 +92,7 @@ public class transition : MonoBehaviour
             yield return null;
 
         }
+        
+        
     }
 }

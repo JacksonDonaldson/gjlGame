@@ -11,6 +11,11 @@ public class startcontroller : MonoBehaviour
     public GameObject[] circuits;
     public GameObject startPanel;
 
+    public Sprite chipA;
+    public Sprite chipD;
+    public Sprite chipS;
+    public Sprite chipLS;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,22 +55,22 @@ public class startcontroller : MonoBehaviour
         if (value == "a")
         {
             Image image = circuits[activeCircuit].GetComponent(typeof(Image)) as Image;
-            image.color = new Color(0, 0, 1);
+            image.sprite = chipA;
         }
         else if(value == "d")
         {
             Image image = circuits[activeCircuit].GetComponent(typeof(Image)) as Image;
-            image.color = new Color(1, 0, 0);
+            image.sprite = chipD;
         }
         else if(value == "Space")
         {
             Image image = circuits[activeCircuit].GetComponent(typeof(Image)) as Image;
-            image.color = new Color(.5f, .5f, .5f, 1);
+            image.sprite = chipS;
         }
         else if(value == "lShift")
         {
             Image image = circuits[activeCircuit].GetComponent(typeof(Image)) as Image;
-            image.color = new Color(.8f, .8f, 0);
+            image.sprite = chipLS;
         }
 
         activeCircuit = -1;

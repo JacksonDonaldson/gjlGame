@@ -16,6 +16,10 @@ public class lever : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
+        if(other.gameObject.name != "robot")
+        {
+            return;
+        }
         if (!used && (other.gameObject.GetComponent(typeof(movement)) as movement).holdingA)
         {
             wallToMove.Activate();

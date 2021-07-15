@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class movement : MonoBehaviour
 {
     private bool holdingR;
@@ -32,7 +32,12 @@ public class movement : MonoBehaviour
 
         checkInputs();
 
-        
+
+
+        if (Input.GetKey("r"))
+        {
+            reset();
+        }
 
 
         if (holdingR)
@@ -178,12 +183,23 @@ public class movement : MonoBehaviour
         if(Physics2D.OverlapArea(new Vector2(transform.position.x - .35f, transform.position.y - .51f), new Vector2(transform.position.x + .35f, transform.position.y -.52f)))
         {
             grounded = true;
-            print(Physics2D.OverlapArea(new Vector2(transform.position.x - .35f, transform.position.y - .51f), new Vector2(transform.position.x + .35f, transform.position.y - .52f)));
-            print(transform.position);
         }
         else
         {
             grounded = false;
+        }
+    }
+
+    void reset()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.name == "spikeLayer")
+        {
+            reset();
         }
     }
 }
