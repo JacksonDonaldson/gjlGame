@@ -68,10 +68,10 @@ public class movement : MonoBehaviour
             }
         }
 
-        if(!holdingL && !holdingR)
-        {
-            rb.velocity = new Vector2(0, rb.velocity.y);
-        }
+        //if(!holdingL && !holdingR)
+        //{
+        //    rb.velocity = new Vector2(0, rb.velocity.y);
+        //}
 
         if (holdingJ)
         {

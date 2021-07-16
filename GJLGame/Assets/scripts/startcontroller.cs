@@ -8,6 +8,7 @@ public class startcontroller : MonoBehaviour
     int activeCircuit = -1;
 
     public string[] circuitValues = { "none", "none", "none", "none", "none", "none", "none", "none", "none" };
+    public static string[] savedCircuitValues = { "none", "none", "none", "none", "none", "none", "none", "none", "none" };
     public GameObject[] circuits;
     public GameObject startPanel;
 
@@ -20,7 +21,12 @@ public class startcontroller : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0;
-
+        circuitValues = savedCircuitValues;
+        for(int i = 0; i < 9; i++)
+        {
+            activeCircuit = i;
+            configureActiveCircuit(circuitValues[i]);
+        }
     }
 
     // Update is called once per frame
@@ -82,6 +88,7 @@ public class startcontroller : MonoBehaviour
     public void begin()
     {
         Time.timeScale = 1;
+        savedCircuitValues = (string[])circuitValues.Clone();
         startPanel.SetActive(false);
 
     }

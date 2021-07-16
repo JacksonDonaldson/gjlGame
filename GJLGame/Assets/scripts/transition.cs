@@ -41,6 +41,7 @@ public class transition : MonoBehaviour
         StartCoroutine(translate());
 
     }
+
     IEnumerator translate()
     {
         print("translate called");
