@@ -68,10 +68,10 @@ public class movement : MonoBehaviour
             }
         }
 
-        //if(!holdingL && !holdingR)
-        //{
-        //    rb.velocity = new Vector2(0, rb.velocity.y);
-        //}
+        if(!holdingL && !holdingR)
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
 
         if (holdingJ)
         {
@@ -180,13 +180,12 @@ public class movement : MonoBehaviour
 
     void checkGroundedness()
     {
-        if(Physics2D.OverlapArea(new Vector2(transform.position.x - .35f, transform.position.y - .51f), new Vector2(transform.position.x + .35f, transform.position.y -.52f)))
+        Collider2D cols = Physics2D.OverlapArea(new Vector2(transform.position.x - .35f, transform.position.y - .51f), new Vector2(transform.position.x + .35f, transform.position.y - .52f));
+        grounded = false;
+        if (!cols.isTrigger)
         {
             grounded = true;
-        }
-        else
-        {
-            grounded = false;
+
         }
     }
 
