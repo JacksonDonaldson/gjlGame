@@ -53,6 +53,10 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("level9");
     }
+    public void credits()
+    {
+        SceneManager.LoadScene("credits");
+    }
 
     public void QuitGame()
     {

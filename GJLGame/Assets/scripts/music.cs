@@ -6,9 +6,13 @@ public class music : MonoBehaviour
 {
     // Start is called before the first frame update
     public static bool spawned;
+    private AudioSource aS;
+    public AudioClip end;
+    public AudioClip levels;
 
     void Start()
     {
+        aS = gameObject.GetComponent(typeof(AudioSource)) as AudioSource;
         if (!spawned)
         {
             DontDestroyOnLoad(gameObject);
@@ -21,9 +25,18 @@ public class music : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void startTrack(string track)
     {
-        
+        if(track == "end")
+        {
+            aS.clip = end;
+            aS.Play();
+        }
+        if(track == "levels")
+        {
+            aS.clip = levels;
+            aS.Play();
+        }
+
     }
 }
