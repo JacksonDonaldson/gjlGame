@@ -29,11 +29,13 @@ public class music : MonoBehaviour
     {
         if(track == "end")
         {
+            aS.volume = 0.03f;
             aS.clip = end;
             aS.Play();
         }
         if(track == "levels")
         {
+            aS.volume = 0.03f;
             aS.clip = levels;
             aS.Play();
         }

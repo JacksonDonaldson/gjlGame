@@ -182,14 +182,14 @@ public class movement : MonoBehaviour
     {
         Collider2D cols = Physics2D.OverlapArea(new Vector2(transform.position.x - .35f, transform.position.y - .51f), new Vector2(transform.position.x + .35f, transform.position.y - .52f));
         grounded = false;
-        if (!cols.isTrigger)
+        if (cols != null && !cols.isTrigger)
         {
             grounded = true;
 
         }
     }
 
-    void reset()
+    public void reset()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

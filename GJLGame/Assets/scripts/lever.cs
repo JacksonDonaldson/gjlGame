@@ -6,6 +6,7 @@ public class lever : MonoBehaviour
 {
     private bool used;
     public transition wallToMove;
+    public transition otherWall;
 
     private SpriteRenderer sr;
 
@@ -23,12 +24,22 @@ public class lever : MonoBehaviour
         if (!used && (other.gameObject.GetComponent(typeof(movement)) as movement).holdingA)
         {
             wallToMove.Activate();
+            if(otherWall != null)
+            {
+                otherWall.Activate();
+            }
             used = true;
             sr.flipX = !sr.flipX;
         }
     }
     void OnTriggerExit2D(Collider2D other)
     {
+        if(other.friction != 0)
+        {
+            return;
+
+        }
         used = false;
+       // print("exiting");
     }
 }

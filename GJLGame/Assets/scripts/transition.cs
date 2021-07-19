@@ -44,14 +44,14 @@ public class transition : MonoBehaviour
 
     IEnumerator translate()
     {
-        print("translate called");
+        //print("translate called");
         bool destination = !atStart;
         atStart = !atStart;
 
         float distance = Mathf.Sqrt((startPos.x - endPos.x) * (startPos.x - endPos.x) + (startPos.y - endPos.y) * (startPos.y - endPos.y));
         float angleChange = Mathf.DeltaAngle(startRotation, endRotation);
 
-        print(distance);
+        //print(distance);
         float startTime = Time.time;
 
 
