@@ -872,7 +872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -950,9 +950,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.016411781, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.1875, y: 0, z: 0.21875, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 20}
+    oldSize: {x: 1, y: 16}
     newSize: {x: 1, y: 16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1079,9 +1079,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.016411781, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.1875, y: 0, z: 0.21875, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 20}
+    oldSize: {x: 1, y: 16}
     newSize: {x: 1, y: 16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -72248,9 +72248,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.016411781, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.1875, y: 0, z: 0.21875, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 20}
+    oldSize: {x: 1, y: 16}
     newSize: {x: 1, y: 16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -72431,7 +72431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -73605,7 +73605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -73749,7 +73749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.764151, g: 0.764151, b: 0.764151, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -73881,7 +73881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -74003,9 +74003,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.016411781, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.1875, y: 0, z: 0.21875, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 20}
+    oldSize: {x: 1, y: 16}
     newSize: {x: 1, y: 16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -74186,7 +74186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -74318,7 +74318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -75623,9 +75623,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: movement, Assembly-CSharp
-        m_MethodName: reset
+      - m_Target: {fileID: 599635391}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: level8
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -75839,9 +75839,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.016411781, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.1875, y: 0, z: 0.21875, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 20}
+    oldSize: {x: 1, y: 16}
     newSize: {x: 1, y: 16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -76371,7 +76371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

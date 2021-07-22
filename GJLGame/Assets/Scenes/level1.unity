@@ -934,8 +934,8 @@ MonoBehaviour:
   m_text: Welcome to Con-fuse-on. At the start of each level, you will have to choose
     what actions you can use. Click the chip on the top left of the screen.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c699851d29112a64289bce76aad35725, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: c699851d29112a64289bce76aad35725, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

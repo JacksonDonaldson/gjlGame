@@ -591,9 +591,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: movement, Assembly-CSharp
-        m_MethodName: reset
+      - m_Target: {fileID: 1866611109}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: level7
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3276,9 +3276,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.016411781, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.1875, y: 0, z: 0.21875, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 20}
+    oldSize: {x: 1, y: 16}
     newSize: {x: 1, y: 16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3537,9 +3537,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.016411781, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.1875, y: 0, z: 0.21875, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 20}
+    oldSize: {x: 1, y: 16}
     newSize: {x: 1, y: 16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3993,9 +3993,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.016411781, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.1875, y: 0, z: 0.21875, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 20}
+    oldSize: {x: 1, y: 16}
     newSize: {x: 1, y: 16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -32391,9 +32391,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.016411781, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.1875, y: 0, z: 0.21875, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 20}
+    oldSize: {x: 1, y: 16}
     newSize: {x: 1, y: 16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
