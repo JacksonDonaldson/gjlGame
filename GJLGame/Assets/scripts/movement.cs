@@ -16,6 +16,9 @@ public class movement : MonoBehaviour
     public startcontroller circs;
     public Rigidbody2D rb;
     public bool grounded = false;
+
+    private float lastX;
+    private float lastY;
     // Start is called before the first frame update
     void Start()
     {
@@ -91,6 +94,17 @@ public class movement : MonoBehaviour
             rb.velocity = new Vector2(-speed, rb.velocity.y);
         }
 
+        if(Mathf.Abs(lastX) > 5 && Mathf.Abs(rb.velocity.x) < .1)
+        {
+            //ran into a wall
+            rb.velocity = new Vector2(rb.velocity.x, lastY - .45f);
+            print("wall!");
+        }
+        lastX = rb.velocity.x;
+        lastY = rb.velocity.y;
+        print(rb.velocity.y);
+        print(rb.velocity.x);
+        print("");
         checkGroundedness();
     }
 
@@ -180,12 +194,18 @@ public class movement : MonoBehaviour
 
     void checkGroundedness()
     {
+        if(Mathf.Abs(rb.velocity.y) > .1)
+        {
+            grounded = false;
+            return;
+        }
         Collider2D cols = Physics2D.OverlapArea(new Vector2(transform.position.x - .35f, transform.position.y - .51f), new Vector2(transform.position.x + .35f, transform.position.y - .52f));
         grounded = false;
         if (cols != null && !cols.isTrigger)
         {
+            //print(transform.position);
             grounded = true;
-
+            //print(cols);
         }
     }
 
